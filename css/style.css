@@ -1,0 +1,234 @@
+@font-face{
+   font-family: "Lato";
+   src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+   font-display: swap;
+   font-weight: 400;
+   font-style: normal;
+}
+@font-face{
+   font-family: "Lato";
+   src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+   font-display: swap;
+   font-weight: 700;
+   font-style: normal;
+}
+@font-face{
+   font-family: "Lato";
+   src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+   font-display: swap;
+   font-weight: 900;
+   font-style: normal;
+   }
+
+
+body{
+   font-family: Lato, sans-serif;
+   font-size: 16px;
+   line-height: 25.6px;
+   color: #424551;
+}
+
+.wrapper{
+   position: relative;
+   min-height: 100%;
+   padding: 100px;
+   margin: 100px;
+   overflow: hidden;
+
+  
+}
+
+.header{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	padding: 15px;
+	background-color: rgb(0, 0, 0);
+	z-index: 500;
+
+}
+
+.header__container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.menu {
+	font-size: 0;
+   text-align: center;
+}
+.menu__item {
+	position: relative;
+	display: inline-block;
+}
+.menu__item:not(:last-child){
+	margin-right: 70px;
+}
+.menu__item:hover .submenu{
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+
+
+.menu__link {
+	font-size: 16px;
+   font-weight: 700;
+   text-transform: uppercase;
+	color: #fff;
+	display: inline-block;
+	padding: 5px 0px;
+}
+.submenu {
+   text-align:left;
+	background-color: #ffffff;
+   border: 3px solid rgb(202, 200, 200);
+   border-radius: 5px;
+	padding: 15px;
+	position: absolute;
+	min-width: 180px;
+	top: 130%;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease 0s;
+}
+
+.submenu__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.submenu__link {
+	font-size: 16px;
+   font-weight: 900;
+   text-transform: uppercase;
+   text-decoration: underline;
+	color: #424551;
+}
+
+
+
+
+.conteiner{
+   border: 3px solid rgb(202, 200, 200);
+   border-radius: 5px;
+   position: relative;
+}
+
+
+
+.conteiner__block{
+   font-size: 24px;
+   font-weight: 700;
+   text-transform: uppercase;
+   padding: 50px;  
+   text-align: center;
+   border-radius: 5px;
+   margin: 25px;
+   width: 75%;
+   position: relative;
+}
+
+.conteiner__block--1{
+   background-color: #c4c4c4;
+   left: 10%;
+   top: 100px;
+}
+
+
+
+.conteiner__block--2{
+   background-color: #686868;
+   top: 50px;
+   z-index: 3;
+   
+}
+
+
+
+.conteiner__block--3{
+   background-color: #000000;
+   left: 25%;
+   
+}
+
+.conteiner__block--absolute{
+   color: rgb(255, 255, 255);
+   background-color: #b30000;
+   position: absolute;
+   top: -50px;
+   right: -50px;
+   width: auto;
+}
+.conteiner__block--fixed{
+   color: rgb(255, 255, 255);
+   background-color: #0003b3;
+   position: fixed;
+   top: 500px;
+   left: 0px;
+   width: 300px;
+   height: 50px;
+   z-index: 200;
+   padding: 10px;
+   padding-right: 20px;
+   margin-left: -100px;
+   text-align: right;
+}
+
+.page__sticky{
+  width: 25%;
+}
+
+.sticky__conteiner{
+   height: 800px;
+   position: relative;
+   border: none;
+
+}
+
+.conteiner__block--sticky{
+   color: rgb(255, 255, 255);
+   background-color: #07a863;
+   top: 0;
+   width: 100%;
+   position: sticky;
+   z-index: 100;
+   margin: 0;
+}
+
+.page__car{
+   height: 600px;
+   
+}
+
+.car__conteiner{
+   margin-top: 50px;
+   position: relative;   
+}
+
+
+.car__osnova{
+   position: absolute;
+}
+
+.car__hvost{
+   position: absolute;
+}
+
+.car__koleso1{
+   position: absolute;
+}
+
+.car__koleso2{
+   position: absolute;
+}
+
+.car__star{
+   position: absolute;
+}
+
+
+
+
+
